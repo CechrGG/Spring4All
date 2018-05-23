@@ -1,2 +1,3 @@
 # Spring4All
-Spring Boot/Cloud .beta
+Spring Boot/Cloud demo
+
