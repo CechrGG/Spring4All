@@ -1,5 +1,6 @@
 /target/
 /doc/
+/bin/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
