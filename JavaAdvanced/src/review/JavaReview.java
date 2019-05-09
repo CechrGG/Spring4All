@@ -24,7 +24,7 @@ public class JavaReview {
 	 */
 	private static String strTest = "Hello, Leslie";
 	
-	private static Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
+	private static Logger logger = LogManager.getLogger(JavaReview.class);
 
 	/**
 	 * @author: Leslie
@@ -53,11 +53,16 @@ public class JavaReview {
 		inner2.finalize();
 		System.gc();
 		
-		//review.conlInput();
-		
-		logger.log(Level.INFO, "Im log");
-		logger.debug("Im debug");
-		logger.fatal("Im fatal");
+		/*review.conlInput();
+		for(int i = 0; i < 1024*1024; i++) {
+			logger.trace("I'm trace");
+			logger.debug("I'm debug");
+			logger.info("I'm info");
+			logger.warn("I'm warn");
+			logger.error("I'm error");
+			logger.fatal("I'm fatal");
+			Thread.sleep(10);
+		}*/
 	}
 	
 	public void conlInput() {
@@ -75,6 +80,7 @@ public class JavaReview {
 			
 		}
 	}
+	
 	
 	public Inner getInner(int n) {
 		return new Inner(n);
