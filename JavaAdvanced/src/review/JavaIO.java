@@ -13,6 +13,7 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 /**
  * @author Leslie
@@ -43,6 +44,16 @@ public class JavaIO {
 		//fileInputStreamTest(file);
 		fileWriter(file);
 		fileReader(file);
+		
+		Scanner scan = new Scanner(System.in);
+		while(scan.hasNextLine()) {
+			String str = scan.nextLine();
+			if(!str.equals("quit")) {
+				System.out.println("next:" + str);
+			} else {
+				break;
+			}
+		}
 	}
 	
 	/**
