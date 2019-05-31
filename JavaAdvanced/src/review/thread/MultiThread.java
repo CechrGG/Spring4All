@@ -2,6 +2,9 @@
  * 
  */
 package review.thread;
+
+import java.util.concurrent.locks.Lock;
+
 /**
 * @author guoguo
 * @version 创建时间: 2019年5月8日 上午11:45:54
@@ -27,6 +30,7 @@ public class MultiThread {
 	}
 	
 	public class ThreadTest extends Thread {
+
 		
 	}
 
