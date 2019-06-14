@@ -19,7 +19,7 @@ import org.apache.ibatis.annotations.Select;
  */
 public interface UserMapper {
 	//@Select("select * from t_user where user_id= #{id}")
-	public User getUserById(int id);
+	public User getUserById(int userId);
 	
 	public List<User> getUserList();
 	
@@ -27,6 +27,6 @@ public interface UserMapper {
 	
 	public void updateUser(User user);
 	
-	public void deleteUserById(int id);
+	public void deleteUserById(int userId);
 	
 }

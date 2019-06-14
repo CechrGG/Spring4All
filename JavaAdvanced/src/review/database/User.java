@@ -13,14 +13,14 @@ package review.database;
  */
 public class User {
 	
-	private int userId;
-	private String userName;
+	private int user_id;
+	private String user_name;
 	private String password;
 	private byte age;
 	private String email;
 	private String phone;
-	private String createTime;
-	private String modifyTime;
+	private String create_time;
+	private String modify_time;
 	
 	public User() {
 		
@@ -28,33 +28,33 @@ public class User {
 	
 	public User(String name, String password, String createTime) {
 		//this.userId = id;
-		this.userName = name;
+		this.user_name = name;
 		this.password = password;
-		this.createTime = createTime;
+		this.create_time = createTime;
 	}
 	/**
 	 * @return the userId
 	 */
 	public int getUserId() {
-		return userId;
+		return user_id;
 	}
 	/**
 	 * @param userId the userId to set
 	 */
 	public void setUserId(int userId) {
-		this.userId = userId;
+		this.user_id = userId;
 	}
 	/**
 	 * @return the userName
 	 */
 	public String getUserName() {
-		return userName;
+		return user_name;
 	}
 	/**
 	 * @param userName the userName to set
 	 */
 	public void setUserName(String userName) {
-		this.userName = userName;
+		this.user_name = userName;
 	}
 	/**
 	 * @return the password
@@ -108,31 +108,31 @@ public class User {
 	 * @return the createTime
 	 */
 	public String getCreateTime() {
-		return createTime;
+		return create_time;
 	}
 	/**
 	 * @param createTime the createTime to set
 	 */
 	public void setCreateTime(String createTime) {
-		this.createTime = createTime;
+		this.create_time = createTime;
 	}
 	/**
 	 * @return the modifyTime
 	 */
 	public String getModifyTime() {
-		return modifyTime;
+		return modify_time;
 	}
 	/**
 	 * @param modifyTime the modifyTime to set
 	 */
 	public void setModifyTime(String modifyTime) {
-		this.modifyTime = modifyTime;
+		this.modify_time = modifyTime;
 	}
 
 	@Override
 	public String toString() {
-		return "User [userId=" + userId + ", userName=" + userName + ", password=" + password + ", age=" + age
-				+ ", email=" + email + ", phone=" + phone + ", createTime=" + createTime + ", modifyTime=" + modifyTime
+		return "User [userId=" + user_id + ", userName=" + user_name + ", password=" + password + ", age=" + age
+				+ ", email=" + email + ", phone=" + phone + ", createTime=" + create_time + ", modifyTime=" + modify_time
 				+ "]";
 	}
 

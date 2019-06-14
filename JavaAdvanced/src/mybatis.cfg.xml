@@ -34,12 +34,12 @@
         </environment>
     </environments>
 
-    <!-- 映射文件，mapper的配置文件 
+    <!-- 映射文件，mapper的配置文件 -->
     <mappers>
         <!--直接映射到相应的mapper文件 -->
         <mapper resource="review/database/mybatis.mapper.xml" />
         <!--扫描包路径下所有xxMapper.xml文件 -->
-        <package name="review.database" />
+        <!-- package name="review.database" /> -->
     </mappers>
 
 </configuration>  

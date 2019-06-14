@@ -4,7 +4,26 @@
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="review.database.UserMapper">
-	<select id="GetUserById" parameterType="int" resultType="User">
-		select * from `t_user` where user_id = #{id}
+	<select id="getUserById" parameterType="int" resultType="User">
+		SELECT * FROM `t_user` WHERE user_id = #{userId}
     </select>
+    
+    <select id="getUserList" resultType="User">
+    	SELECT * FROM `t_user`
+    </select>
+    
+    <insert id="insertUser" parameterType="User">
+    	INSERT INTO `t_user`(user_name, password, create_time)
+    	VALUES(#{user_name}, #{password}, #{create_time})
+    </insert>
+    
+    <update id="updateUser" parameterType="User">
+    	UPDATE `t_user` SET user_name=#{user_name}, password=#{password}, age=#{age},
+    	email=#{email}, phone=#{phone}, create_time=#{create_time}, modify_time=#{modify_time}
+    	WHERE user_id=#{user_id}
+    </update>
+    
+    <delete id="deleteUser" parameterType="int">
+    	DELETE FROM `t_user` WHERE user_id=#{userId}
+    </delete>
 </mapper>
