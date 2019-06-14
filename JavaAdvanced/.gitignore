@@ -2,6 +2,7 @@
 /doc/
 /bin/
 /log/
+/src/org/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
