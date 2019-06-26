@@ -3,6 +3,7 @@
 /bin/
 /log/
 /src/org/
+/src/redis/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
